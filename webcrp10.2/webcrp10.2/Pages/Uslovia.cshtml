@@ -1,0 +1,240 @@
+﻿@page
+@model webcrp10._2.Pages.UsloviaModel
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<link rel="stylesheet" type="text/css" href="~/css/site.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная</title>
+
+ <body>
+    <style>
+
+   /*      .navbar-expand-sm{
+            width: auto;
+    background-color: #3a476c;
+    color: #fff;
+        } */
+
+        .car-details-tooltip {
+            display: none;
+            position: absolute;
+            bottom: 100%; /* Position the tooltip above the item */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            padding: 10px;
+            /*     box-shadow: 0px 3px 10px grey; */
+            z-index: 3;
+            width: 800px; /* Увеличение ширины */
+        }
+
+             .car-details-tooltip::before {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-width: 8px;
+                        border-style: solid;
+                        border-color: #ccc transparent transparent transparent;
+              } 
+
+
+        .car-details-tooltip {
+            display: block;
+        }
+
+        .left-details,
+        .right-details {
+            width: 50%; /* Делим окно на две части */
+            float: left;
+        }
+
+        .right-details {
+            padding-left: 50px; /* Добавляем отступ слева для правой части */
+        }
+
+        .car-details-tooltip p {
+            margin: 5px 0;
+            font-size: 14px;
+            display: flex; /* Для управления расположением элементов */
+            justify-content: space-between; /* Равномерное распределение пространства между элементами */
+        }
+
+            /* Стили для названий характеристик */
+            .car-details-tooltip p strong {
+                color: #c73335; /* Красный цвет */
+                font-weight: bold;
+                /*     width: auto; /* Ширина названия характеристики */
+                text-align: left;
+            }
+
+
+            .car-details-tooltip p span {
+                flex: 1; /* Занимать всё доступное пространство справа */
+                text-align: right; /* Выравнивание по правому краю */
+                font-weight: bold;
+                color: #555; /* Серый цвет */
+                position: relative; /* Для корректного отображения псевдоэлемента */
+            }
+
+                .car-details-tooltip p span::before {
+                    content: '..............................................................................................';
+                    color: #ccc; /* Цвет пунктира */
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    text-align: right;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    z-index: -1;
+                }
+
+    </style>
+        <div class="wrapper">
+            <div class="head">
+                <header>
+                    <div class="header_bottom_border">
+                        <div class="content">
+                            <div class="header_top">
+                                <div class="row">
+                                    <div class="col-lg-7 col-sm-6 col-12">
+                                        <a href="/index">
+                                            <img class="header_logo" src="logo/logo1.png" alt="На главную" title="На главную" href="/">                                </a>
+                                        <a class="modal_phone_call red_btn modal-phone-call" href="Login">
+                                            Заказать автомобиль<span class="hidden-md"> сейчас</span>!                                </a>
+
+                                    </div>
+                                    <div class="header__user" >
+                                        <div class="dropdown">
+                                            <button class="user__button select" id="loginButton">
+                                                <img src="ikon/вход.png" alt="User" title="Аккаунт" class="user__image" >
+                                            </button>
+                                       
+                                                <script>
+                                                   var loginButton = document.getElementById("loginButton");
+
+                                                 // Добавляем обработчик события клика
+                                                 loginButton.addEventListener("click", function() {
+                                                 // Перенаправляем пользователя на страницу login.html
+                                                window.location.href = "Login";
+                                                  });
+                                                </script>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="header_menu container-fluid">
+                            <div class="row">
+                                <div class="col-md-10 col-sm-12">
+                                    
+            <nav class="navbar-expand-sm">
+                <span class="mobile_btn" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Меню">
+                  Меню        </span>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_top_menu">
+                                                                <li itemprop="name" class="menu_item"><a itemprop="url" href="index" class="selected">Главная</a></li>
+                                                                               
+                                                                                <li itemprop="name" class="menu_item"><a itemprop="url" href="Uslovia">Условия</a></li>
+                                            <li itemprop="name" class="menu_item"><a itemprop="url" href="Contact">Контакты</a></li>
+                                                    </ul>
+                </div>
+                
+                
+            </nav>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </header><div class="bg_main">
+            <div class="content">
+
+                    <div class="row">
+                        <div class="col-12 col-lg-9 content-area">
+                            <h4 class="padb-15">Требования к арендатору:</h4>
+                            <ul class="list">
+                                <li class="padb-15">
+                                    минимальный возраст 25 лет; на автомобили бизнес класса не менее 30 лет.
+                                </li>
+                                <li class="padb-15">стаж вождения не менее 5 лет.</li>
+                            </ul>
+                            <h4 class="padb-15">Перечень необходимых документов для физических лиц</h4>
+                            <h5 class="padb-15">1. Гражданам Российской Федерации:</h5>
+                            <ul class="list">
+                                <li class="padb-15"> паспорт;</li>
+                                <li class="padb-15"> водительское удостоверение;</li>
+                                <span class="red bold"></span>
+                            </ul>
+                            <h5 class="padb-15">2. Иностранным гражданам УСЛУГА ВРЕМЕННО НЕ ПРЕДОСТАВЛЯЕТСЯ !</h5>
+                            <ul class="list">
+                                <li class="padb-15">паспорт;</li>
+                                <li class="padb-15">национальное водительское удостоверение для граждан стран,подписавших; </li>
+                                <li class="padb-15">национальное водительское удостоверение и международное водительское удостоверение или нотариальный перевод на русский язык - для граждан иных государств; </li>
+                                <li class="padb-15">миграционная карта или въездная виза; </li>
+                            </ul>
+                            <p>
+                                Оплата производится полностью при заключении договора.
+                            </p>
+
+                            </p>
+                            <h3 class="padb-15">С юридическими лицами заключаем договора при аренде от 5 суток. Перечень необходимых документов:</h3>
+
+                            <p>
+                                <a>1. Доверенность на получение автомобиля (DOC)</a>
+                            </p>
+                            <p>
+                                Для того чтобы оплатить аренду автомобиля по безналичному расчёту Вам необходимо позвонить по телефонам ниже в любое время с 9:00 до 20:30 с понедельника по воскресенье узнать о наличии интересующего вас автомобиля и <a href="Zayavka">оформить заявку</a> соответствующей формы.
+                            </p>
+                            <p>
+                                Далее &nbsp;по электронной почте на адрес - <a href="https://localhost:7160/">redcar@yandex.ru</a>
+                                отправить следующие документы:&nbsp;
+                            </p>
+                            <ul class="list">
+                                <li class="padb-15"><span><a>заявку с печатью предприятия</a>;</span> </li>
+                                <li class="padb-15"> карточка учёта основных сведений клиента (с печатью предприятия);</li>
+                                <li class="padb-15"> копия Устава и Учредительного договора (для ЗАО только устав);</li>
+                                <li class="padb-15"> копия свидетельства о регистрации юридического лица;</li>
+                                <li class="padb-15"> копия свидетельства о присвоении ИНН/КПП;</li>
+                                <li class="padb-15"> копия приказа о назначении генерального директора;</li>
+                            </ul>
+                            <p>
+                                Далее мы подготавливаем договор и выставляем счет на оплату аренды автомобиля. После поступления денежных средств на&nbsp; расчётный счёт, вы можете получить автомобиль, при этом вам необходимо привести оригиналы следующих документов:
+                            </p>
+                            <ul class="list">
+                                <li class="padb-15"> паспорт;</li>
+                                <li class="padb-15"> водительское удостоверение;</li>
+                                <li class="padb-15"><a>заявку с печатью предприятия;</a> </li>
+                                <li class="padb-15"><span><a>доверенность на получение автомобиля, право управления и подписания договора аренды (с печатью предприятия);</a> </span></li>
+                                <li class="padb-15"><a>карточка учёта основных сведений клиента (с печатью предприятия).</a></li>
+                            </ul>
+                            <div class="header_top_phone">
+                                <span class="mobile_icons">
+                                    <a class="mobile_link" target="_blank" href="tg://resolve?domain=rentacar_vlg"><i class="fab fa-telegram"></i></a>
+                                    <a class="mobile_link" target="_blank" href="https://vk.com/prokatavto_avtomax"><i class="fab fa-vk"></i></a>
+                                </span>
+                                <a class="mobile_link" href="tel:78442505085">+7-8442 50-50-85</a><br>
+                                <span class="mobile_icons">
+                                    <a class="mobile_link viber" href="viber://add?number=79173385585"><i class="fab fa-viber"></i></a>
+                                    <a class="mobile_link whatsapp" href="https://api.whatsapp.com/send?phone=79173385585"><i class="fab fa-whatsapp"></i></a>
+                                </span>
+                                <a class="mobile_link" href="tel:79173385585">+7 917 338-55-85</a>
+                            </div>
+                            <a class="red_btn modal-phone-call" href="Zayavka">
+                                Заказать автомобиль
+                            </a>
+                </div>
+             
+            </div>
+         
+        </body>

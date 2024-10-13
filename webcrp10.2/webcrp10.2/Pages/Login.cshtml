@@ -1,0 +1,166 @@
+﻿@page
+
+@model webcrp10._2.Pages.LoginModel
+@{
+    ViewData["Title"] = "Авторизация";
+}
+<title>Авторизация</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- подключаем бутстрап -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<head>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+
+</head>
+    
+<style>
+    .login-page {
+        width: 370px;
+        padding: 12% 0 0;
+        margin: auto;
+    }
+
+    .form {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 380px;
+        height: 500px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: left;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    input[type="password"].form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        outline: none;
+    }
+
+        input[type="password"].form-control:focus {
+            border-color: #c73335;
+            box-shadow: 0 0 0 0.2rem #c73335;
+        }
+
+    input[type="name"].form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        outline: none;
+    }
+
+    input[type="text"].form-control:focus {
+        border-color: #c73335;
+        box-shadow: 0 0 0 0.2rem #c73335;
+    }
+
+    .form-group2 {
+        text-align: center;
+    }
+
+    .btn-primary {
+        background-color: #c73335;
+        border-color: #c73335;
+        width: 180px;
+    }
+
+        .btn-primary:hover {
+            background-color: #a82b2d;
+            border-color: #a82b2d;
+        }
+
+    .col-md-13 {
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 30px; /* Примерное значение отступа */
+    }
+
+    .form-group2 {
+        margin-bottom: 30px; /* Примерное значение отступа */
+    }
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        color: #c73335; /* Цвет ссылки по умолчанию */
+    }
+
+        a:hover {
+            color: #a82b2d; /* Цвет ссылки при наведении на нее */
+        }
+
+</style>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-13">
+                            <h2>Авторизация</h2>
+                            <p>Заполните все поля, чтобы войти в свой аккаунт.</p>
+                        </div>
+                        <form method="post">
+                            <div class="form-group">
+                                <label>Логин</label>
+                                <input type="text" name="Login" class="form-control" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Пароль</label>
+                                <input type="password" name="Password" class="form-control" required />
+                            </div>
+                            <div class="form-group2">
+                                <input type="submit" class="btn btn-primary" value="Войти" />
+                            </div>
+                            <p>Нет аккаунта? <a href="Registration">Зарегистрироваться</a></p>
+                        </form>
+                    @*     @if (CurrentUser.UserID != 0)
+                        {
+                            <p>Ваш ID: @CurrentUser.UserID</p>
+                        } *@
+
+                        <div>
+                            @if (ViewBag.SuccessMessage != null)
+                            {
+                                <p>@ViewBag.SuccessMessage</p>
+                            }
+                        </div>
+                        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @Model.ErrorMessage
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+

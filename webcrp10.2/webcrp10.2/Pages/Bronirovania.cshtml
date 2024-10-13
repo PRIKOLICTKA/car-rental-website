@@ -1,0 +1,466 @@
+﻿@page
+@model  webcrp10._2.Pages.BronirovaniaModel
+
+@{
+    ViewData["Title"] = "Бронирования";
+     var carModels = ViewData["CarModels"] as Dictionary<int, string>;
+}
+<link rel="stylesheet" type="text/css" href="~/css/STYLEbronirovania.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бронирования</title>
+<body>
+
+    <style>
+        .table-container {
+            padding: 20px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+
+            .table th, .table td {
+                padding: 20px;
+                text-align: center; /* Выравниваем по центру */
+                font-size: 18px; /* Увеличиваем размер текста */
+            }
+
+            .table th {
+                background-color: #ebe4e4; /* Цвет фона заголовков */
+                color: #a82b2d; /* Цвет текста заголовков */
+                font-size: 20px; /* Увеличиваем размер текста заголовков */
+                border-bottom: 2px solid #a82b2d;
+            }
+
+            .table tbody tr td {
+                background-color: #fff;
+                color: #a82b2d;
+                border-bottom: 1px solid #a82b2d;
+            }
+
+            .table thead th {
+                border-bottom: 2px solid #a82b2d;
+            }
+
+            .table th {
+                white-space: nowrap;
+            }
+
+            .table td {
+                white-space: nowrap;
+            }
+
+            .table tbody tr:last-child td {
+                border-bottom: 0.5px solid #edebeb;
+            }
+
+
+
+            .table tbody {
+                border-top: none;
+            }
+
+
+        .header__userid {
+            margin-top: 0px; /* Отступ сверху для ID */
+            margin-left: 550px;
+        }
+
+            .header__userid p {
+                font-size: 14px; /* Размер шрифта для ID */
+                color: black; /* Цвет текста для ID */
+                margin: 0; /* Убираем отступы */
+            }
+    </style>
+    <noscript>
+
+        <div><img src="https://mc.yandex.ru/watch/49628701" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <div class="wrapper">
+        <div class="head">
+            <header>
+                <div class="header_bottom_border">
+                    <div class="content">
+                        <div class="header_top">
+                            <div class="row">
+                                <div class="col-lg-7 col-sm-6 col-12">
+                                    <a href="index2">
+                                        <img class="header_logo" src="logo/logo1.png" alt="На главную" title="На главную">
+                                    </a>
+                                    <a class="modal_phone_call red_btn modal-phone-call">
+                                        Заказать автомобиль<span class="hidden-md"> сейчас</span>!
+                                    </a>
+                                </div>
+                                <div class="header__user">
+                                    <div class="dropdown">
+                                        <button class="user__button select">
+                                            <img src="ikon/user.png" alt="User" title="Аккаунт" class="user__image">
+                                        </button>
+                                   @*      @if (Model.UserID != 0)
+                                        {
+                                            <div class="header__userid">
+                                                <p>Ваш ID: @Model.UserID</p>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="header__userid">
+                                                <p>Ваш ID не найден.</p>
+                                            </div>
+                                        } *@
+                                        <input type="hidden" name="gender">
+                                        <ul class="dropdown-menu">
+                                            <li id="cabinet">Кабинет</li>
+                                            <li id="zayavki">Заявки</li>
+                                            <li id="bronirovania">Бронирования</li>
+                                            <li id="izbrannoe">Избранное</li>
+                                            @* <li id="settings">Настройки</li> *@
+                                            <li id="exit">Выйти</li>
+                                            <script>
+                                                document.querySelector('.user__button').addEventListener('click', function () {
+                                                    document.querySelector('.dropdown').classList.toggle('active');
+                                                });
+
+                                                var cabinetLink = document.getElementById("cabinet");
+
+                                                // Добавляем обработчик события клика
+                                                cabinetLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу cabinet.html
+                                                    window.location.href = "Zayavki";
+                                                });
+                                                var zayavkiLink = document.getElementById("zayavki");
+
+                                                // Добавляем обработчик события клика
+                                                zayavkiLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу zayavki.html
+                                                    window.location.href = "Zayavki";
+                                                });
+                                                var bronirovaniyaLink = document.getElementById("bronirovania");
+
+                                                // Добавляем обработчик события клика
+                                                bronirovaniyaLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу bronirovaniya.html
+                                                    window.location.href = "Bronirovania";
+                                                });
+                                                var izbrannoeLink = document.getElementById("izbrannoe");
+
+                                                // Добавляем обработчик события клика
+                                                izbrannoeLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу izbrannoe.html
+                                                    window.location.href = "Izbrannoe";
+                                                });
+                                                var settingsLink = document.getElementById("settings");
+
+                                                // Добавляем обработчик события клика
+                                                settingsLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу settings.html
+                                                    window.location.href = "Settings";
+                                                });
+                                                var exitLink = document.getElementById("exit");
+
+                                                // Добавляем обработчик события клика
+                                                exitLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу exit.html
+                                                    window.location.href = "index";
+                                                });
+                                            </script>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="header_menu container-fluid">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-12">
+
+                                <nav class="navbar-expand-sm">
+                                    <span class="mobile_btn" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Меню">
+                                        Меню
+                                    </span>
+                                    <div class="collapse navbar-collapse" id="navbar">
+                                        <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_top_menu">
+                                            <li itemprop="name" class="menu_item"><a itemprop="url" href="index2" class="selected">Главная</a></li>
+                                            <li itemprop="name" class="menu_item"><a itemprop="url" href="Uslovia2">Условия</a></li>
+                                            <li itemprop="name" class="menu_item"><a itemprop="url" href="Contact2">Контакты</a></li>
+
+                                        </ul>
+                                    </div>
+
+
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header><div class="bg_main">
+                <div class="content">
+                    @* <a href="Zayavki">
+                        <h2 class="section_title active">Заявки</h2>
+                    </a>
+                    <a href="Bronirovania">
+                        <h2 class="section_title">Бронирования</h2>
+                    </a>
+                    <a href="Izbrannoe">
+                        <h2 class="section_title">Избранное</h2>
+                    </a> *@
+                </div>
+                    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                <div class="back-rectangle-container">
+                    <div class="rectangle-container">
+                        <div class="status-search">
+                            <select class="form-control-status" name="status" id="status" required>
+                                <option value="">Выберите Статус</option>
+                                <option value="all">Все</option>
+                                <option value="new">Активные</option>
+                                <option value="closed">Закрытые</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns-container">
+                    <div class="columns">
+                        <div class="column" id="bookings-column">
+                            <div id="bookings-container" class="card-container">
+                                <!-- Здесь будут отображаться бронирования -->
+                                @foreach (var item in Model.Bronirovania.OrderByDescending(b => b.ID))
+                                {
+                                    <div class="card" data-status="@(item.Статус ?? "Активные")">
+                                        <div class="card-header">
+                                            <h3>@(carModels.ContainsKey(item.ID_avto) ? carModels[item.ID_avto] : "Неизвестно")</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><i class="far fa-calendar-alt"></i> <strong>Начало Аренды:</strong> @item.Дата_Начала_Аренды.ToString("dd.MM.yyyy")</p>
+                                            <p><i class="far fa-calendar-check"></i> <strong>Конец Аренды:</strong> @item.Дата_Конца_Аренды.ToString("dd.MM.yyyy")</p>
+                                            <p><i class="fas fa-money-bill-wave"></i> <strong>Цена:</strong> @item.Цена</p>
+                                            <p class="status"><i class="fas fa-info-circle"></i> <strong>Статус:</strong> @item.Статус</p>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div id="no-new-bookings-message" class="no-applications" style="display: none;">
+                                У вас пока нету активных бронирований.
+                            </div>
+                            <div id="no-closed-bookings-message" class="no-applications" style="display: none;">
+                                У вас нет закрытых бронирований.
+                            </div>
+                            <div id="no-bookings-message" class="no-applications" style="display: none;">
+                                У вас нет бронирований.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @section Scripts {
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        function filterBookings(status) {
+                            var filteredCards;
+                            var message;
+
+                            if (status === "new") {
+                                filteredCards = $(".card").filter(function () {
+                                    var cardStatus = $(this).data("status");
+                                    return cardStatus === "Активные" || cardStatus === "Активна";
+                                });
+                                message = "#no-new-bookings-message";
+                            } else if (status === "closed") {
+                                filteredCards = $(".card").filter(function () {
+                                    var cardStatus = $(this).data("status");
+                                    return cardStatus === "Закрытые" || cardStatus === "Закрыта";
+                                });
+                                message = "#no-closed-bookings-message";
+                            } else {
+                                filteredCards = $(".card");
+                                message = "#no-bookings-message";
+                            }
+
+                            $(".card").hide();
+                            $(".no-applications").hide();  // Скрыть все сообщения
+
+                            if (filteredCards.length > 0) {
+                                filteredCards.show();
+                            } else {
+                                $(message).show();
+                            }
+                        }
+
+                        $('#status').on('change', function () {
+                            var selectedStatus = $(this).val();
+                            filterBookings(selectedStatus);
+                        });
+
+                        // Фильтрация по умолчанию при загрузке страницы
+                        filterBookings('new');
+                    });
+                </script>
+            }
+
+                <style>
+                .section_title {
+                    margin: 10px 0;
+                    text-align: left;
+                    display: inline-block;
+                    margin-right: 30px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    position: relative;
+                }
+
+                .columns-container {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 20px;
+                }
+
+                .columns {
+                    display: flex;
+                    width: 80%;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                .column {
+                    flex: 1;
+                    padding: 20px;
+                }
+
+                .card-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .card {
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    margin: 15px;
+                    padding: 20px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    flex: 0 0 calc(33.333% - 30px); /* Три карточки в ряд с учетом отступов */
+                }
+
+                    .card:hover {
+                        transform: translateY(-5px);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                    }
+
+                .card-header {
+                    background-color: #3a476c;
+                    padding: 15px;
+                    border-radius: 10px 10px 0 0;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                .card-body {
+                    padding: 15px;
+                    color: #333;
+                }
+
+                    .card-body p {
+                        margin: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1em;
+                    }
+
+                        .card-body p i {
+                            margin-right: 10px;
+                            color: #a82b2d;
+                        }
+
+                    .card-body .status {
+                        border-top: 2px solid #3a476c;
+                        padding-top: 15px;
+                        margin-top: 15px;
+                    }
+
+                        .card-body .status i {
+                            color: #3a476c;
+                        }
+
+                .form-control-status {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    font-size: 16px;
+                }
+
+                .no-applications {
+                    text-align: center;
+                    font-size: 1.5em;
+                    color: #a82b2d;
+                    margin-top: 20px;
+                }
+
+                .back-rectangle-container {
+                    background-color: #2a3451;
+                    padding: 20px;
+                    width: 320px;
+                    margin: 20px auto;
+                    text-align: center;
+                    border-radius: 0;
+                    margin-left: 200px;
+                }
+
+                .rectangle-container {
+                    background-color: #3a476c;
+                    padding: 10px;
+                    width: 280px;
+                    margin: 0 auto;
+                    border-radius: 0;
+                    margin-left: 0px;
+                }
+
+                .status-search {
+                    padding: 20px 0;
+                    background-color: #3a476c;
+                    margin: 0;
+                }
+
+                    .status-search .form-control-status {
+                        border-radius: 0;
+                        background-color: #2a3451;
+                        border: none;
+                        color: white;
+                        padding: 10px 15px;
+                        width: 250px;
+                    }
+
+                        .status-search .form-control-status option {
+                            padding: 25px 15px;
+                        }
+
+                        .status-search .form-control-status:focus {
+                            box-shadow: 0 0 0 0.2rem #c73335;
+                        }
+
+
+                </style>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>

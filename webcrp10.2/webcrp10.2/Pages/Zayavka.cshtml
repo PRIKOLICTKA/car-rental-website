@@ -1,0 +1,365 @@
+﻿@page
+@model webcrp10._2.Pages.ZayavkaModel
+@{
+    ViewData["Title"] = "Заказ";
+}
+<link rel="stylesheet" type="text/css" href="~/css/STYLEzayavka.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заказ</title>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <style>
+        /* Scoped CSS */
+        .custom-datepicker .form-control {
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+            .custom-datepicker .form-control:focus {
+                border-color: #66afe9;
+                outline: 0;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+            }
+        /* Add your additional scoped styles here */
+
+        .header__userid {
+            margin-top: 0px; /* Отступ сверху для ID */
+            margin-left: 550px;
+        }
+
+            .header__userid p {
+                font-size: 14px; /* Размер шрифта для ID */
+                color: black; /* Цвет текста для ID */
+                margin: 0; /* Убираем отступы */
+            }
+    </style>
+
+
+</head>
+ <body>
+  
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/49628701" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
+        <div class="wrapper">
+            <div class="head">
+                <header>
+                    <div class="header_bottom_border">
+                        <div class="content">
+                            <div class="header_top">
+                                <div class="row">
+                                    <div class="col-lg-7 col-sm-6 col-12">
+                                        <a href="index2">
+                                            <img class="header_logo" src="logo/logo1.png" alt="На главную" title="На главную">                                </a>
+                                        <a class="modal_phone_call red_btn modal-phone-call" href="forma-zakaza.html">
+                                            Заказать автомобиль<span class="hidden-md"> сейчас</span>!                                </a>
+                                    </div>
+                                    <div class="header__user">
+                                        <div class="dropdown">
+                                            <button class="user__button select">
+                                                <img src="ikon/user.png" alt="User" title="Аккаунт" class="user__image">
+                                            </button>
+                                      @*   @if (Model.UserID != 0)
+                                        {
+                                            <div class="header__userid">
+                                                <p>Ваш ID: @Model.UserID</p>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="header__userid">
+                                                <p>Ваш ID не найден.</p>
+                                            </div>
+                                        } *@
+                                            <input type="hidden" name="gender">
+                                            <ul class="dropdown-menu">
+                                            <li id="cabinet">Кабинет</li>
+                                            <li id="zayavki">Заявки</li>
+                                            <li id="bronirovania">Бронирования</li>
+                                            <li id="izbrannoe">Избранное</li>
+                                           @*  <li id="settings">Настройки</li> *@
+                                            <li id="exit">Выйти</li>
+                                            <script>
+                                                document.querySelector('.user__button').addEventListener('click', function () {
+                                                    document.querySelector('.dropdown').classList.toggle('active');
+                                                });
+
+                                                var cabinetLink = document.getElementById("cabinet");
+
+                                                // Добавляем обработчик события клика
+                                                cabinetLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу cabinet.html
+                                                    window.location.href = "Zayavki";
+                                                });
+                                                var zayavkiLink = document.getElementById("zayavki");
+
+                                                // Добавляем обработчик события клика
+                                                zayavkiLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу zayavki.html
+                                                    window.location.href = "Zayavki";
+                                                });
+                                                var bronirovaniyaLink = document.getElementById("bronirovania");
+
+                                                // Добавляем обработчик события клика
+                                                bronirovaniyaLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу bronirovaniya.html
+                                                    window.location.href = "Bronirovania";
+                                                });
+                                                var izbrannoeLink = document.getElementById("izbrannoe");
+
+                                                // Добавляем обработчик события клика
+                                                izbrannoeLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу izbrannoe.html
+                                                    window.location.href = "Izbrannoe";
+                                                });
+                                                // var settingsLink = document.getElementById("settings");
+
+                                                // // Добавляем обработчик события клика
+                                                // settingsLink.addEventListener('click', function () {
+                                                //     // Перенаправляем пользователя на страницу settings.html
+                                                //     window.location.href = "Settings";
+                                                // });
+                                                var exitLink = document.getElementById("exit");
+
+                                                // Добавляем обработчик события клика
+                                                exitLink.addEventListener('click', function () {
+                                                    // Перенаправляем пользователя на страницу exit.html
+                                                    window.location.href = "index";
+                                                });
+                                            </script>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="header_menu container-fluid">
+                            <div class="row">
+                                <div class="col-md-10 col-sm-12">
+                            </div>
+                        </div>
+                                    
+            <nav class="navbar-expand-sm">
+                <span class="mobile_btn" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Меню">
+                  Меню        </span>
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement" class="header_top_menu">
+                                    <li itemprop="name" class="menu_item"><a itemprop="url" href="index2" class="selected">Главная</a></li>
+                                    <li itemprop="name" class="menu_item"><a itemprop="url" href="Uslovia2">Условия</a></li>
+                                    <li itemprop="name" class="menu_item"><a itemprop="url" href="Contact2">Контакты</a></li>
+                                                    </ul>
+                </div>
+            </nav>
+        </div>
+      
+    </div>
+</div>
+</div>
+</header>
+<div class="">
+                <div class="content container-fluid">
+                    <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <div class="item_breadcrumbs" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                        
+                        <meta itemprop="position" content="1">
+                    </div>
+                    <div class="item_breadcrumbs" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                  
+                        <meta itemprop="position" content="2">
+                    </div></div>        <h1>Форма заказа</h1>
+            <div id="order">
+            <div class="row">
+                <div class="col-12">
+                        <form  method="post" id="order-form" >
+                                      @*   <input type="hidden" name="sessid" id="sessid" value="3092b31daabd62735f1ebb363df33353">       
+                                        <input type="hidden" name="ADD_NEW" value="Y"> *@
+                               <div class="form-group">
+                                <label for="mark">Выберите марку</label>
+                                <select class="form-control" name="mark" id="mark" required>
+                                    <option value="">Выберите марку</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Lada">Lada</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Renault">Renault</option>
+                                </select>
+                                </div>
+                            <div class="form-group">
+                                <label for="model">Выберите модель</label>
+                                <select class="form-control" name="ID_avto" id="ID_avto" required>
+                                    <option value="">Выберите модель</option>
+                                </select>
+                            </div>
+                                        @* <input type="hidden" name="mark" value="">
+                        <input type="hidden" name="model" value=""> *@
+                        <div class="form-group">
+                            <label for="datepicker">Срок аренды</label>
+                            <div class="input-daterange input-group" id="datepicker">
+                                <label for="start">&nbsp; с &nbsp;</label>
+                                    <input readonly="" type="text" class="form-control" value="" name="Дата_Начала_Аренды" id="Дата_Начала_Аренды" required="">
+                                <label for="end">&nbsp; до &nbsp;</label>
+                                    <input readonly="" type="text" class="form-control" value="" name="Дата_Конца_Аренды" id="Дата_Конца_Аренды" required="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="timestart">В какое время заберете автомобиль?</label>
+                                <input class="form-control" type="time" name="Время_Вывоза" id="Время_Вывоза" value="" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="timeend">В какое время вернете автомобиль?</label>
+                                <input class="form-control" type="time" name="Время_Возврата" id="Время_Возврата" value="" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="from">Где хотите получить машину</label>
+                                <select class="form-control" name="Получение_авто" id="Получение_авто" required="">
+                                <option value="0">Где хотите получить машину</option>
+                                <option value="Аэропорт  (п.Гумрак)">Аэропорт  (п.Гумрак)</option>
+                                <option value="Ж/д вокзал">Ж/д вокзал</option>
+                                <option value="Офис компании">Офис компании</option>                    
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">Где хотите сдать машину</label>
+                                <select class="form-control" name="Сдача_авто" id="Сдача_авто" required="">
+                                <option value="0">Где хотите сдать машину</option>
+                                <option value="Аэропорт  (п.Гумрак)">Аэропорт  (п.Гумрак)</option>
+                                <option value="Ж/д вокзал">Ж/д вокзал</option>
+                                <option value="Офис компании">Офис компании</option>                    
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Ваша фамилия</label>
+                                <input type="text" id="Фамилия" class="form-control" name="Фамилия" required="" placeholder="Ваше имя" value="">
+                        </div>
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="Имя" class="form-control" name="Имя" required="" placeholder="Ваше имя" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Ваше отчество</label>
+                                <input type="text" id="Отчество" class="form-control" name="Отчество" required="" placeholder="Ваше имя" value="">
+                            </div>
+                        <div class="form-group">
+                            <label for="phone">Ваш телефон</label>
+                                <input type="text" id="Телефон" class="form-control phone" name="Телефон" required="" placeholder="Ваш телефон" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш E-mail</label>
+                                <input type="email" id="Email" class="form-control" name="Email" required="" placeholder="Ваш E-mail" value="">
+                        </div>
+                            <div asp-action="Zayavka" style="text-align: center">
+                                <input type="submit" name="submit" class="btn transparent_btn" value="Оформить заказ">
+                                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <div class="padb-15"></div>
+            <h3 class="red"><a class="red" href="/tarify/" target="_blank">Здесь вы можете подробно ознакомится с нашими
+                    тарифами проката автомобилей</a></h3>
+        <p>
+             К оплате принимаются карты любых платежных систем.По вашему желанию вы можете оставить залог картой (временно услуга не предоставляется). Для граждан России залог блокируется только на период аренды автомобиля. При возврате авто залог разблокируется сразу.Для иностранных граждан мы блокируем залоговую сумму на срок 30 дней в связи с необходимостью удержания суммы штрафов за нарушения правил дорожного движения.При заказе автомобиля с доставкой не забудьте указать форму оплаты, чтобы менеджер взял мобильный терминал для оплаты.
+        </p>
+        <p>
+        </p>
+        <h4 class="padb-15">Дополнительные услуги</h4>
+        <h5>Доставка в аэропорт</h5>
+        <ul class="list">
+            <li class="padb-15"><span>с 8:00 до 20:00 = <span class="red bold">1000 руб</span></span></li>
+            <li class="padb-15"><span>с 20:00 до 8:00 = <span class="red bold">2000 руб</span></span></li>
+        </ul>
+        <h5>Доставка на ж/д вокзал</h5>
+        <ul class="list">
+            <li class="padb-15"><span>с 8:00 до 20:00 = <span class="red bold">1000 руб</span></span></li>
+            <li class="padb-15"><span>с 20:00 до 8:00 = <span class="red bold">2000 руб</span></span></li>
+        </ul>
+        <p>
+        </p>
+        <p>
+             При возврате авто в грязном виде удерживается <span class="red bold">1000 рублей </span> за мойку авто.
+        </p>
+        <h5>Продление автомобиля вне офиса<span class="red bold"> возможно</span> при уведомлении сотрудников компании по телефону и переводе денег на карту сбербанка</h5>
+        <ul class="list">
+        </ul>
+        <h5>Другие дополнительные услуги</h5>
+        <ul class="list">
+            <li class="padb-15"><span>Дополнительная доверенность - <span class="red bold">250 руб</span></span></li>
+            <li class="padb-15"><span>Детское кресло - <span class="red bold">200 руб/сутки</span>, но не более <span class="red bold">2000 руб</span> за весь срок аренды</span></li>
+            <li class="padb-15"><span>Зарядные устройства = <span class="red bold">бесплатно</span></span></li>
+        </ul>   
+     </div>
+         
+       
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+    @section Scripts {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#datepicker').datepicker({
+                    format: 'yyyy-mm-dd',
+                    language: 'ru',
+                    autoclose: true,
+                    todayHighlight: true
+                });
+
+                var carModels = {
+                    "Toyota": [
+                        { ID_avto: "Camry AT", id: 1105 },
+                       
+                    ],
+                    "Hyundai": [
+                        { ID_avto: "Staria 3,5 AT Luxe", id: 1101 },
+                        { ID_avto: "Creta 2,0 AT", id: 1103 },
+                        { ID_avto: "Creta 1,6 AT", id: 1104 },
+                        { ID_avto: "Solaris II AT NEW", id: 1108 },
+                        { ID_avto: "Solaris II AT", id: 1109 },
+                        { ID_avto: "Solaris 1,6 AT", id: 1110 },
+                        { ID_avto: "Solaris 1,6 MT", id: 1111 },
+                        { ID_avto: "Solaris 1,4 MT", id: 1112 },
+                        { ID_avto: "Accent МТ", id: 1117 }
+                    ],
+                    "Lada": [
+                        { ID_avto: "Granta liftback AT NEW", id: 1114 },
+                        { ID_avto: "Granta sedan MT NEW", id: 1115 },
+                        { ID_avto: "Granta liftback MT", id: 1116 },
+                        { ID_avto: "Kalina universal MT", id: 1118 }
+                    ],
+                    "Kia": [
+                        { ID_avto: "Rio AT NEW", id: 1107 },
+                        { ID_avto: "Sportage NEW AT", id: 1102 },
+                        { ID_avto: "Rio X-Line AT NEW", id: 1106 }
+                    ],
+                    "Renault": [
+                        { ID_avto: "Logan 2 MT", id: 1113 }
+                    ]
+                };
+
+                $('#mark').on('change', function () {
+                    var mark = this.value;
+                    var ID_avtoSelect = $('#ID_avto');
+                    ID_avtoSelect.empty().append('<option value="">Выберите модель</option>');
+                    if (carModels[mark]) {
+                        carModels[mark].forEach(function (ID_avto) {
+                            ID_avtoSelect.append(new Option(ID_avto.ID_avto, ID_avto.id));
+                        });
+                    }
+                });
+            });
+        </script>
+    }
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+        </body>
+

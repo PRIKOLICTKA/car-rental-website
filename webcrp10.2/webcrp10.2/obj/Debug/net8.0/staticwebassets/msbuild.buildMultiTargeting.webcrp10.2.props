@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webcrp10.2.props" />
+</Project>

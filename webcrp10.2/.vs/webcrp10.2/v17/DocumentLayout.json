@@ -1,0 +1,514 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\izbrannoe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\izbrannoe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\bronirovania.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\bronirovania.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\zayavki.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\zayavki.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\zayavka.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\zayavka.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\uslovia2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\uslovia2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\contact2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\contact2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\uslovia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\uslovia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\uslovia2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\uslovia2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\contact2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\contact2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\contact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\contact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\izbrannoe.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\izbrannoe.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\bronirovania.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\bronirovania.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\zayavki.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\zayavki.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\zayavka.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\zayavka.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\index2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\index2.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\controller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\controller\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\index2viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\index2viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\styleindex2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\wwwroot\\css\\styleindex2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\pages\\uslovia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\pages\\uslovia.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|c:\\users\\home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\styleyslovia.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1043E049-2689-4588-AC75-A3D0EDE47D53}|webcrp10.2\\webcrp10.2.csproj|solutionrelative:webcrp10.2\\wwwroot\\css\\styleyslovia.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Services\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Services\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Services\\ApplicationDbContext.cs",
+              "RelativeToolTip": "webcrp10.2\\Services\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIBJwBEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:26:00.508Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Controller\\AccountController.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Controller\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Controller\\AccountController.cs",
+              "RelativeToolTip": "webcrp10.2\\Controller\\AccountController.cs",
+              "ViewState": "AQIAANkAAAAAAAAAAAAYwPgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T13:26:38.418Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAJgBAAAAAAAAAAAAAJYAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T09:15:49.812Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Login.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Login.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAIBJwHMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:05:15.527Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Registration.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Registration.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Registration.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Registration.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:05:19.842Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index2.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Index2.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index2.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Index2.cshtml",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAAwOIAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:05:31.611Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Zayavka.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavka.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Zayavka.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavka.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Zayavka.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAIBJwFAAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:05:51.818Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Zayavki.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavki.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Zayavki.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavki.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Zayavki.cshtml",
+              "ViewState": "AQIAAIkAAAAAAAAAAIBJwKUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:05:55.018Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bronirovania.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Bronirovania.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Bronirovania.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Bronirovania.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Bronirovania.cshtml",
+              "ViewState": "AQIAALoAAAAAAAAAAIBJwNcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:06:00.407Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Izbrannoe.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Izbrannoe.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Izbrannoe.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Izbrannoe.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Izbrannoe.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAxwK0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T10:06:04.121Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Uslovia.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Uslovia.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Uslovia.cshtml",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAwJQAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T11:25:36.915Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Uslovia2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia2.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Uslovia2.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia2.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Uslovia2.cshtml",
+              "ViewState": "AQIAAJ8AAAAAAAAAAIBJwLQAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T11:45:16.281Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index2.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index2.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Index2.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Index2.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Index2.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:22:28.831Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Zayavka.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavka.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Zayavka.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavka.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Zayavka.cshtml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA4wDMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:35:32.49Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Zayavki.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavki.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Zayavki.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Zayavki.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Zayavki.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:37:16.26Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Bronirovania.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Bronirovania.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Bronirovania.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Bronirovania.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Bronirovania.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:38:49.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Izbrannoe.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Izbrannoe.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Izbrannoe.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Izbrannoe.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Izbrannoe.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T20:41:15.356Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Uslovia2.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia2.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Uslovia2.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia2.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Uslovia2.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T11:45:33.118Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Contact.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAIBJwHAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T21:17:54.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Contact.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Contact.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Contact.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T21:18:07.552Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contact2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact2.cshtml",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Contact2.cshtml",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact2.cshtml",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Contact2.cshtml",
+              "ViewState": "AQIAAIoAAAAAAAAAAIBJwJYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T21:30:24.867Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Contact2.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact2.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Contact2.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Contact2.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Contact2.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T21:30:40.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "webcrp10.2\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "webcrp10.2\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAGAJAAAAAAAAAAAIwIgJAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-20T21:09:57.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "STYLEindex2.css",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\STYLEindex2.css",
+              "RelativeDocumentMoniker": "webcrp10.2\\wwwroot\\css\\STYLEindex2.css",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\STYLEindex2.css",
+              "RelativeToolTip": "webcrp10.2\\wwwroot\\css\\STYLEindex2.css",
+              "ViewState": "AQIAALwIAAAAAAAAAIBJwPEIAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-20T18:38:08.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index2ViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Index2ViewModel.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Index2ViewModel.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Index2ViewModel.cs",
+              "RelativeToolTip": "webcrp10.2\\Index2ViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T18:20:52.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Uslovia.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia.cshtml.cs",
+              "RelativeDocumentMoniker": "webcrp10.2\\Pages\\Uslovia.cshtml.cs",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\Pages\\Uslovia.cshtml.cs",
+              "RelativeToolTip": "webcrp10.2\\Pages\\Uslovia.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T11:29:11.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "STYLEyslovia.css",
+              "DocumentMoniker": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\STYLEyslovia.css",
+              "RelativeDocumentMoniker": "webcrp10.2\\wwwroot\\css\\STYLEyslovia.css",
+              "ToolTip": "C:\\Users\\Home\\source\\repos\\webcrp10.2\\webcrp10.2\\wwwroot\\css\\STYLEyslovia.css",
+              "RelativeToolTip": "webcrp10.2\\wwwroot\\css\\STYLEyslovia.css",
+              "ViewState": "AQIAAM4EAAAAAAAAAIBJwN4EAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-15T10:37:17.726Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
